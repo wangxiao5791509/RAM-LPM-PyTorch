@@ -1,0 +1,22 @@
+name: ram_lpm
+channels:
+  - pytorch
+dependencies:
+  - python=3.6.7
+  - pip=19.3.1
+  - pytorch=1.1.0
+  - torchvision=0.3.0
+  - cudatoolkit=10.0.130
+  - matplotlib=3.1.1
+  - numpy=1.16.4
+  - pillow=6.1.0
+  - scipy=1.2.1
+  - pip:
+    - gdown==3.8.1
+    - sacred==0.7.4
+    - torchex>=0.0.13
+    - tqdm==4.29.0
+    - git+https://github.com/tarokiritani/advertorch.git@zero_pad
+    - joblib==0.11 # for polar transformer net
+    - tensorflow_gpu==1.14.0 # for polar transformer net
+    - scikit_image==0.15.0 # for polar transformer net
